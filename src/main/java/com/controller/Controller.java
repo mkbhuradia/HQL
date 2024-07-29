@@ -22,6 +22,7 @@ public class Controller {
 		SessionFactory factory = new Configuration().configure("hibernate_config.xml").buildSessionFactory();
 		Session s=factory.openSession();
 		Transaction tx= s.beginTransaction();
+		System.out.println("hii I am change");
 		/*
 		Department dep=new Department(1003,"wireless","phq lalkothi jaipur");
 		
